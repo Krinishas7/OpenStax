@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #0073e6;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+/* Notes Section */
+.notes-section {
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notes-section h2 {
+  text-align: center;
+  color: #0073e6;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notes-list li {
+  margin: 0.5rem 0;
+}
+
+.notes-list a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.notes-list a:hover {
+  text-decoration: underline;
+}
+
+/* Tutorials Section */
+.tutorials-section {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tutorials-section h2 {
+  text-align: center;
+  color: #0073e6;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.video-item {
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #0073e6;
+  color: white;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}

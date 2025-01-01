@@ -1,0 +1,150 @@
+.home .wrapper-login {
+  position: relative;
+  width: 440px;
+}
+.wrapper-login h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper-login .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 40px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: #1e0b04;
+  border: 1 px solid #fff;
+  outline: none;
+  border-radius: 40px;
+  color: #fff;
+  padding: 0 25px 0 45px;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 45px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus-label,
+.input-box input:valid-label {
+  font-size: 0.8em;
+  top: -14px;
+  left: 17px;
+}
+.input-box .icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  font-size: 1.2em;
+  color: #1e0b04;
+}
+
+.wrapper-login .remember-forgot {
+  font-size: 0.9em;
+  color: #1e0b04;
+  font-weight: 500;
+  margin: -25px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.remember-forgot label input {
+  accent-color: #1e0b04;
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color: #1e0b04;
+  text-decoration: none;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+.wrapper-login .btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #1e0b04 #71412a);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 1em;
+  color: #1e0b04;
+  font-weight: 500;
+}
+.wrapper-login .register-link {
+  font-size: 0.9em;
+  color: #1e0b04;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.navigationBar {
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.navigationBar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 35;
+}
+
+.navigationBar a:hover {
+  color: blue; /* Change the color when hovering */
+}
+.content {
+  padding: 20px;
+}
+.nav-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo-nav {
+  order: 1;
+  font-size: 30px;
+}
+.logo-nav a {
+  order: 1;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 35;
+}
+
+.navigationBar {
+  order: 2;
+}
+
+.logo-nav,
+.navigationBar {
+  flex-grow: 1;
+}

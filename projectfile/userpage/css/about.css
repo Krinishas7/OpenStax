@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: var(--about-background, url('about.jpg')) no-repeat center/cover;
+  color: #333;
+  margin: 0;
+}
+
+/* Main Container */
+#about {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Section Styling with Background Images */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  text-align: center;
+  background: var(--about-background, url('flex.jpg')) no-repeat center/cover;
+  color: #0e0505;
+  position: relative;
+}
+
+/* Input Field for Background Image */
+.about-container input[type="file"] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e9dede;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.container1-text h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container1-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffeaa7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container1-text p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #08f7c7;
+ 
+}
+
+/* Features Styling */
+.features {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1;
+  max-width: 200px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  color: #6c63ff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Why Choose Us Section */
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  background: var(--choose-background, url('/assets/images/choose-bg.jpg')) no-repeat center/cover;
+  color: #fff;
+}
+
+.container2-img {
+  flex: 1;
+  background: url('/assets/images/learning.jpg') no-repeat center/cover;
+  min-height: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.container2-txt {
+  flex: 1;
+  text-align: left;
+}
+
+.container2-txt h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #8e44ad, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container2-txt h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #ffeaa7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container2-txt p {
+  margin-bottom: 20px;
+  color: #f9f9f9;
+  font-size: 1.1rem;
+}
+
+/* Tutors Section */
+.container3 {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--tutors-background, url('/assets/images/tutors-bg.jpg')) no-repeat center/cover;
+  color: #fff;
+}
+
+.container3 h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff6a88, #ff9a9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container3 h2 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  color: #ffeaa7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container3 p {
+  font-size: 1.1rem;
+  color: #f9f9f9;
+}
+
+/* Tutors Cards */
+.tutors {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tutor {
+  flex: 1;
+  max-width: 200px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutor:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tutor h3 {
+  font-size: 1.3rem;
+  color: #6c63ff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}

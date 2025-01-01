@@ -1,0 +1,30 @@
+.tutors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tutor {
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.tutor img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.tutor h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.tutor p {
+  color: #777;
+}

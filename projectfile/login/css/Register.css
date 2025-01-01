@@ -1,0 +1,206 @@
+/* General Body and Background */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text color for contrast */
+  font-family: Arial, sans-serif;
+  z-index: -1;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Form Title */
+.container .form-title {
+  font-size: 2.2em;
+  color: #f0f0f0; /* Light text for visibility */
+  margin-bottom: 25px;
+}
+
+/* Input Group Styling */
+.input-group {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Centered and constrained width */
+  margin: 20px auto; /* Centered */
+}
+
+/* Input Fields */
+.input-group input {
+  width: 100%;
+  height: 50px;
+  background: #333; /* Darker input field */
+  border: 1px solid #555; /* Subtle border */
+  outline: none;
+  border-radius: 40px;
+  color: #f0f0f0; /* Light text */
+  padding: 0 25px 0 45px;
+  font-size: 1em;
+}
+
+/* Input Labels */
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 45px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #bbb; /* Slightly dimmed text */
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  font-size: 0.8em;
+  top: -14px;
+  left: 17px;
+}
+
+/* Icon Inside Inputs */
+.input-group .icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  font-size: 1.2em;
+  color: #777; /* Subtle icon color */
+}
+
+/* Submit Button Styling */
+.container .btn {
+  width: 100%;
+  max-width: 400px; /* Centered and constrained width */
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #444, #777); /* Subtle gradient */
+  cursor: pointer;
+  font-size: 1em;
+  color: #f0f0f0;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.container .btn:hover {
+  background: linear-gradient(90deg, #555, #888);
+  transform: scale(1.05);
+}
+
+/* Error Message Styling */
+.error {
+  color: #e57373; /* Error red */
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+
+/* "Or" Divider */
+.or {
+  text-align: center;
+  margin: 20px 0;
+  color: #bbb; /* Dimmed text */
+}
+
+.or::before,
+.or::after {
+  content: "";
+  width: 45%;
+  border-bottom: 1px solid #555; /* Subtle divider */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.or::before {
+  margin-right: 10px;
+}
+
+.or::after {
+  margin-left: 10px;
+}
+
+/* Social Media Icons */
+.icons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.icons i {
+  font-size: 1.5em;
+  margin: 0 10px;
+  color: #bbb; /* Subtle icon color */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icons i:hover {
+  color: #f0f0f0; /* Brighter on hover */
+}
+
+/* Links Section */
+.links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links p {
+  font-size: 1em;
+  color: #bbb; /* Dimmed text */
+}
+
+.links a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.links a:hover {
+  color: #f0f0f0; /* Highlighted on hover */
+  text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .container .form-title {
+    font-size: 1.8em;
+  }
+
+  .input-group {
+    margin: 15px auto;
+  }
+
+  .input-group input {
+    padding: 0 20px 0 40px;
+  }
+
+  .btn {
+    height: 45px;
+    font-size: 0.9em;
+  }
+
+  .icons i {
+    font-size: 1.2em;
+  }
+
+  .or {
+    font-size: 0.9em;
+  }
+
+  .or::before,
+  .or::after {
+    width: 40%;
+  }
+}

@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background Styling */
+body {
+  background-image: url("dark-background.jpg"); /* Replace with your own dark background image */
+  background-size: cover;
+  background-position: center;
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: brightness(0.6); /* Darkens the image */
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #dddddd;
+}
+
+/* Reviews Section */
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+.review-card {
+  background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent dark overlay */
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.review-card h3 {
+  font-size: 1.5rem;
+  color: #e1e1e1;
+  margin-bottom: 0.5rem;
+}
+
+.review-card p {
+  color: #cccccc;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.review-card span {
+  color: #ffcc00;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #999999;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.star-rating {
+  display: flex;
+  cursor: pointer;
+}
+.input-field {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the input */
+  margin-bottom: 15px; /* Space below the input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s; /* Transition for border color */
+}
+
+.input-field:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.comment-button {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 15px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+.comment-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.star {
+  color: #ccc; /* Default star color */
+  font-size: 24px; /* Size of the stars */
+}
+
+.star.selected {
+  color: gold; /* Color for selected stars */
+}

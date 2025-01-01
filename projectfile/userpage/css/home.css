@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.body-index {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/home page.jpg  ") no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.navigationBar {
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.navigationBar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 35;
+}
+
+.navigationBar a:hover {
+  color: pink; /* Change the color when hovering */
+}
+.content {
+  padding: 20px;
+}
+.nav-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo-nav {
+  order: 1;
+  font-size: 30px;
+}
+.logo-nav a {
+  order: 1;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 35;
+}
+
+.navigationBar {
+  order: 2;
+}
+
+.logo-nav,
+.navigationBar {
+  flex-grow: 1;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-container img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.signout {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  background-color: green;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.signout:hover {
+  background-color: darkgreen;
+  color: #fff !important;
+}
+
+/* Show signout on hover */
+.profile-container:hover .signout {
+  display: block;
+}
+
+/* Main Section */
+.home {
+  display: flex;
+  align-items: center;
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.home .content {
+  max-width: 800px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ffc107;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #eee;
+}
+
+.content p:hover {
+  color: #f0f8ff;
+}
